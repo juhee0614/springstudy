@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org"
+			th:fragment="main(title,content)">
+<head>
+	<meta charset="UTF-8">
+	<title th:replace = ${title}>메인화면</title>
+	<style></style>
+	<script></script>
+</head>
+<body>
+	<h1>메인 레이아웃</h1>
+	<main th:replace=${content}>
+		<h3>메인컨텐츠</h3>
+	</main>
+
+	<footer>푸터</footer>
+</body>
+</html>
